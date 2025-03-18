@@ -19,10 +19,21 @@ const sidebars = {
     {
       type: 'category',
       label: 'API Reference',
-      items: [
-        'api/aes-api',
-      ],
       collapsed: false,
+      items: [
+        {
+          type: 'category',
+          label: 'AES Operations',
+          items: ['api/aes-api'],
+          collapsed: false,
+        },
+        {
+          type: 'category',
+          label: 'Database Operations',
+          items: ['api/db-api'],
+          collapsed: false,
+        },
+      ],
     },
   ],
 };
